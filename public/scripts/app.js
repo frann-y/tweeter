@@ -14,6 +14,7 @@ $(document).ready(function() {
 
   //Compose button to show NewTweet menu
     $("button").click(function(){
+        $(window).scrollTop(0);
         $("section.new-tweet").slideToggle(function(){
             $("textarea").select();
         });
