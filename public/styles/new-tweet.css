@@ -1,0 +1,32 @@
+span.counter {
+    text-align: right;
+}
+
+section.new-tweet {
+    margin: 2em;
+    border: 1px ridge lightgrey;
+    border-radius: 5px;
+    background-color: #eee;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.counter {
+    float: right;
+    padding-right: 5px;
+    font-style: italic;
+}
+
+.underline {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.addRed {
+    color: red;
+}
