@@ -46,15 +46,18 @@ $(document).ready(function() {
                 })
             } else if (loggingText.length === 5/*cause  of serialization*/) {
                 $( ".error" ).slideUp("fast", function() {
-                    $(this).slideDown("fast").text( "Field is empty.");
+                    $(this).slideDown("fast").text( "Text field is empty.");
                 })
             } else {
                 $.ajax('/tweets', {
                     method: 'POST',
                     data: loggingText,
                  }).then(function(){
+                    $( ".error" ).slideUp("fast") 
                     loadTweets(loggingText);
                     $("form textarea").val(''); //clears the form after
+                    $(".error").text('');//clear error //empty
+                    $(".counter").text(140);//reset counter //140
                 })
             }
     });

@@ -43,6 +43,10 @@
 
 .error {
     padding: 5px;
+    padding-top: 10px;
+    color: red;
+    font-style: italic;
+    font-size: 13px;
 }
 
 #nav-bar .header {
